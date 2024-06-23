@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Code Examples with Syntax Highlighting</title>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <!-- Prism.js CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/themes/prism.min.css">
+  <!-- Custom styles -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="wrapper">
+    <!-- Header -->
+    <header>
+      <div class="container">
+        <h1>Code Examples with Syntax Highlighting</h1>
+      </div>
+    </header>
+
+    <!-- Main content -->
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="form-group">
+            <label for="categorySelect">Select a Category:</label>
+            <select class="form-control" id="categorySelect" onchange="loadCode()">
+              <optgroup label="Basic Examples">
+                <option value="loop">Loop</option>
+                <option value="conditional">Conditional</option>
+              </optgroup>
+              <optgroup label="Advanced Examples">
+                <option value="recursion">Recursion</option>
+                <option value="sorting">Sorting</option>
+              </optgroup>
+              <!-- Add more optgroup for additional categories -->
+            </select>
+          </div>
+        </div>
+      </div>
+      <div class="row mt-4">
+        <div class="col-md-6">
+          <div class="code-container">
+            <div class="code-label">C Code Example:</div>
+            <pre class="code-textarea"><code id="cCodeTextarea" class="language-c"></code></pre>
+            <button class="copy-button" onclick="copyCode('cCodeTextarea')">Copy</button>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="code-container">
+            <div class="code-label">Python Code Example:</div>
+            <pre class="code-textarea"><code id="pyCodeTextarea" class="language-python"></code></pre>
+            <button class="copy-button" onclick="copyCode('pyCodeTextarea')">Copy</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <p>&copy; 2024 Your Company. All rights reserved.</p>
+      </div>
+    </footer>
+  </div>
+
+  <!-- Bootstrap JS and dependencies -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
+  <!-- Prism.js for syntax highlighting -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/prism.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/components/prism-c.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/components/prism-python.min.js"></script>
+  <!-- Custom script -->
+  <script src="scripts.js"></script>
+</body>
+</html>
