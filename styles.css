@@ -1,0 +1,57 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.wrapper {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.container {
+  flex: 1;
+}
+
+.footer {
+  background: linear-gradient(to right, #833ab4, #fd1d1d, #fcb045);
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+}
+
+.code-container {
+  position: relative;
+}
+
+.code-textarea {
+  width: 100%;
+  height: 300px; /* Fixed height */
+  overflow-y: scroll; /* Enable vertical scrolling */
+  font-family: 'Fira Code', monospace;
+}
+
+.code-label {
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.copy-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  padding: 5px 10px;
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+}
+
+.copy-button:hover {
+  background-color: #0056b3;
+}
+
+/* Additional styles can be added as needed */
